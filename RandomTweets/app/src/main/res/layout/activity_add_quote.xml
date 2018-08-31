@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddQuote"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/colornew">
+
+    <ImageView
+        android:layout_marginTop="50dp"
+        android:id="@+id/android:icon1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:contentDescription="It's Trump."
+        android:scaleType="matrix"
+        android:src="@drawable/logo1" />
+
+    <EditText
+        android:id="@+id/newquote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type a new quote"
+        android:background="@color/colorwhite"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/newperson"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type it's author"
+        android:background="@color/colorwhite"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+    <Button
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ENTER"
+        android:onClick="addquote"/>
+
+</LinearLayout>
